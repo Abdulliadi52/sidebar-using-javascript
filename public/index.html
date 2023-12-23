@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+  <body class="relative bg-backgrond1">
+    <div
+      class="flex flex-col md:flex-row md:items-center md:justify-between px-6 py-4 fixed md:relative md:h-fit top-0 left-0 w-96 md:w-screen bg-white h-screen -translate-x-full opacity-0"
+      id="menu"
+    >
+      <div class="flex items-center justify-between mb-9 md:mb-0">
+        <div>
+          <a
+            href="index.html"
+            class="text-2xl font-semibold text-black capitalize tracking-widest"
+            >coding <span class="text-blue-400"> addicts</span></a
+          >
+        </div>
+        <div class="md:hidden" id="close">
+          <i class="fa-solid fa-xmark font-semibold text-2xl text-red-500"></i>
+        </div>
+      </div>
+      <nav>
+        <ul
+          class="flex flex-col md:flex-row md:items-center gap-8 tracking-widest md:gap-8"
+        >
+          <li
+            class="capitalize font-semibold text-lg text-blue-400 hover:text-black transition ease-linear duration-300"
+          >
+            home
+          </li>
+          <li
+            class="capitalize font-semibold text-lg text-blue-400 hover:text-black transition ease-linear duration-300"
+          >
+            about
+          </li>
+          <li
+            class="capitalize font-semibold text-lg text-blue-400 hover:text-black transition ease-linear duration-300"
+          >
+            contacts
+          </li>
+          <li
+            class="capitalize font-semibold text-lg text-blue-400 hover:text-black transition ease-linear duration-300"
+          >
+            projects
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="fixed top-4 right-10 md:hidden" id="bar">
+      <i
+        class="fa-solid fa-bars font-semibold text-2xl text-blue-500 cursor-pointer"
+      ></i>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
